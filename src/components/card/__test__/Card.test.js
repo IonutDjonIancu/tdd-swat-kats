@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Card from '../Card';
 import Validator from 'validator';
+import userEvent from '@testing-library/user-event';
 
 
 describe('Card test suite', () => {
@@ -42,7 +43,29 @@ describe('Card test suite', () => {
     });
 
 
-
+    test('card should have empty heart', () => {
+        render(<Card {...cardProps}/>);
+        
+        expect(screen.getByAltText(/empty heart/i)).toBeInTheDocument();
+    });
+    
+    test('card should have filled heart', () => {
+        render(<Card {...cardProps} isFavoured={true}/>);
+        
+        expect(screen.getByAltText(/filled heart/i)).toBeInTheDocument();
+    });
+    
+    test('cars should toggle between hearts', () => {
+        render(<Card {...cardProps}/>);
+        
+        userEvent.click(screen.getByRole('button'));
+        
+        expect(screen.getByAltText(/filled heart/i)).toBeInTheDocument();
+        
+        userEvent.click(screen.getByRole('button'));
+        
+        expect(screen.getByAltText(/empty heart/i)).toBeInTheDocument();
+    });
     
 
 });
