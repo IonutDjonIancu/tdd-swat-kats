@@ -1,11 +1,4 @@
-
-
-
-
----------------------------------- to sync ----------------------------------
-
-Using z-index and position absolute.
-    .heart {
+.heart {
     border-radius: 100%;
     background-color: rgba(255, 255, 255, 0.678);
     width: 3rem;
@@ -24,7 +17,3 @@ Using z-index and position absolute.
   .heart img {
     width: 1.75rem;
   }
-
-
-
-
