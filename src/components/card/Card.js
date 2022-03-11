@@ -10,9 +10,14 @@ const Card = ({ name, phone, email, image, isFavoured }) => {
     const toggleHeart = () => {
         setIsFav(!isFav);
     }
+    console.log('-----------------------------------------------------------------------');
+    console.log(image);
+    console.log('-----------------------------------------------------------------------');
 
     return(
-        <div className='card'>
+
+
+        <article className='card'>
             <div className='card-header'>
                 <img src={image.url} alt={image.alt} className='card-img' />
                 <button 
@@ -31,7 +36,7 @@ const Card = ({ name, phone, email, image, isFavoured }) => {
                 <p className='font-weight-light'>{phone}</p>
                 <p>{email}</p> 
             </div>   
-        </div>
+        </article>
     );
 }
 

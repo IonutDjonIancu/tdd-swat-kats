@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Callie",
+        "phone": "1234",
+        "email": "sydney@gmail.com",
+        "image": {
+            "url": "https://coub-anubis-a.akamaized.net/coub_storage/coub/simple/cw_timeline_pic/9b38752cfb6/7a92251b2e34e945ae06d/1505503569_image.jpg",
+            "alt": "swat-kats-1"
+        },
+        "isFavoured": false,
+        "color": "gray",
+        "gender": "female"
+    },
+    {
+        "id": 2,
+        "name": "Tbone",
+        "phone": "1235",
+        "email": "tbone@gmail.com",
+        "image": {
+            "url": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/491a3f26884167.5635dc1f26003.png",
+            "alt": "swat-kats-2"
+        },
+        "isFavoured": false,
+        "color": "black",
+        "gender": "male"
+    },
+    {
+        "id": 3,
+        "name": "Razor",
+        "phone": "1236",
+        "email": "razor@gmail.com",
+        "image": {
+            "url": "https://i.pinimg.com/originals/17/75/30/177530417575fbc9e85e0f269e832bd9.jpg",
+            "alt": "swat-kats-3"
+        },
+        "isFavoured": false,
+        "color": "orange",
+        "gender": "male"
+    }
+]

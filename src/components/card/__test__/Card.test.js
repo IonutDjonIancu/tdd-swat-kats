@@ -71,5 +71,5 @@ describe('Card test suite', () => {
 
 
 
-    
+
 });

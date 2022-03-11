@@ -26,5 +26,7 @@ Using z-index and position absolute.
   }
 
 
+<Card {...cardProps}/>
+
 
 
