@@ -10,9 +10,6 @@ const Card = ({ name, phone, email, image, isFavoured }) => {
     const toggleHeart = () => {
         setIsFav(!isFav);
     }
-    console.log('-----------------------------------------------------------------------');
-    console.log(image);
-    console.log('-----------------------------------------------------------------------');
 
     return(
 
